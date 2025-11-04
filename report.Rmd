@@ -1,6 +1,6 @@
 ---
 title: Three sets of random numbers
-author: You
+author: Cassandra Ortiz
 output: html_document
 ---
 
@@ -28,23 +28,22 @@ random_numbers3 <- readRDS(
 )
 ```
 
-# Random numbers 1
+# Distribution 1
+```{r, Distribution1-histogram}
+#| fig.cap = "Distribution 1"
+hist(random_numbers1, main = "Distribution 1", col = "steelblue")
+```
+# Distribution 2
 
-```{r, random-numbers1-histogram}
-#| fig.cap = "First set of random numbers"
-hist(random_numbers1)
+```{r, Distribution2-histogram}
+#| fig.cap = "Distribution 2"
+hist(random_numbers2, main = "Distribution 2", col = "pink")
 ```
 
-# Random numbers 2
+# Distribution 3
 
-```{r, random-numbers2-histogram}
-#| fig.cap = "Second set of random numbers"
-hist(random_numbers2)
+```{r, Distribution3-histogram}
+#| fig.cap = "Distribution 3"
+hist(random_numbers3, main = "Distribution 3", col = "purple")
 ```
 
-# Random numbers 3
-
-```{r, random-numbers3-histogram}
-#| fig.cap = "Third set of random numbers"
-hist(random_numbers3)
-```
